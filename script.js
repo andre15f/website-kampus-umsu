@@ -6,7 +6,7 @@ const menuLinks  = document.querySelectorAll(".menu-link");
 const modeTersimpan = localStorage.getItem("darkMode");
 if (modeTersimpan === "aktif") {
     document.body.classList.add("dark-mode");
-    darkToggle.textContent = "🌙 Light Mode";
+    darkToggle.textContent = "Light Mode";
 }
 
 darkToggle.addEventListener("click", () => {
