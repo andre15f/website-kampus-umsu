@@ -1,110 +1,98 @@
-/* =============================================
-   UNIVERSITAS MUHAMMADIYAH SUMATERA UTARA — STYLE.CSS
-   Tulis dari baris 1, jangan copy-paste!
-   ============================================= */
-
-/* CSS VARIABLES — palet warna utama UMSU */
 :root {
-    --hijau-tua:    #006B3C;
-    --hijau-muda:   #009A55;
+    --hijau-tua: #006B3C;
+    --hijau-muda: #009A55;
     --hijau-terang: #A7F3D0;
-    --putih:        #FFFFFF;
-    --abu-gelap:    #1E293B;
-    --abu-muda:     #64748B;
-    --bg-section:   #F8FAFC;
-    --shadow:       0 4px 20px rgba(0,0,0,0.08);
+    --putih: #FFFFFF;
+    --abu-gelap: #1E293B;
+    --abu-muda: #64748B;
+    --bg-section: #F8FAFC;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* RESET DASAR — hapus margin/padding bawaan browser */
 * {
-    margin:     0;
-    padding:    0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
-    font-family:      "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background-color: var(--putih);
-    color:            var(--abu-gelap);
-    line-height:      1.6;
+    color: var(--abu-gelap);
+    line-height: 1.6;
 }
 
-/* SCROLL HALUS — untuk navigasi */
 html {
     scroll-behavior: smooth;
 }
 
-/* =============================================
-   NAVBAR
-   ============================================= */
-
+/*NAVBAR*/
 #navbar {
-    position:         sticky;
-    top:              0;
-    z-index:          1000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--hijau-tua);
-    box-shadow:       var(--shadow);
-    transition:       all 0.3s ease;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
 }
 
 .navbar-container {
-    display:         flex;
-    align-items:     center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    max-width:       1200px;
-    margin:          0 auto;
-    padding:         16px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
 }
 
 .navbar-logo {
-    display:     flex;
+    display: flex;
     align-items: center;
-    gap:         12px;
+    gap: 12px;
 }
 
 .logo-bulat {
-    width:            52px;
-    height:           52px;
+    width: 52px;
+    height: 52px;
     background-color: var(--putih);
-    color:            var(--hijau-tua);
-    border-radius:    50%;
-    display:          flex;
-    align-items:      center;
-    justify-content:  center;
-    font-weight:      bold;
-    font-size:        16px;
+    color: var(--hijau-tua);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .logo-teks {
-    display:        flex;
+    display: flex;
     flex-direction: column;
 }
 
 .logo-nama {
-    color:       var(--putih);
+    color: var(--putih);
     font-weight: bold;
-    font-size:   15px;
+    font-size: 15px;
 }
 
 .logo-sub {
-    color:     var(--hijau-terang);
+    color: var(--hijau-terang);
     font-size: 11px;
 }
 
 .navbar-menu {
     display: flex;
-    gap:     28px;
+    gap: 28px;
 }
 
 .menu-link {
-    color:           var(--putih);
+    color: var(--putih);
     text-decoration: none;
-    font-size:       14px;
-    font-weight:     500;
-    padding:         6px 0;
-    border-bottom:   2px solid transparent;
-    transition:      border-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .menu-link:hover {
@@ -113,26 +101,23 @@ html {
 
 .tombol-dark {
     background-color: transparent;
-    border:           2px solid var(--hijau-terang);
-    color:            var(--hijau-terang);
-    padding:          8px 16px;
-    border-radius:    20px;
-    cursor:           pointer;
-    font-size:        13px;
-    transition:       all 0.3s ease;
+    border: 2px solid var(--hijau-terang);
+    color: var(--hijau-terang);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
 }
 
 .tombol-dark:hover {
     background-color: var(--hijau-terang);
-    color:            var(--hijau-tua);
+    color: var(--hijau-tua);
 }
 
-/* =============================================
-   HERO SECTION
-   ============================================= */
-
+/*HERO SECTION*/
 #hero {
-    min-height:       85vh;
+    min-height: 85vh;
     background-color: var(--hijau-tua);
     background-image: linear-gradient(
         135deg,
@@ -140,67 +125,67 @@ html {
         rgba(0, 154, 85, 0.85) 50%,
         rgba(0, 107, 60, 0.95) 100%
     );
-    display:         flex;
-    align-items:     center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    position:        relative;
+    position: relative;
 }
 
 .hero-overlay {
-    width:   100%;
+    width: 100%;
     padding: 80px 24px;
 }
 
 .hero-konten {
-    max-width:  800px;
-    margin:     0 auto;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .hero-label {
-    color:          var(--hijau-terang);
-    font-size:      16px;
+    color: var(--hijau-terang);
+    font-size: 16px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom:  16px;
+    margin-bottom: 16px;
 }
 
 .hero-judul {
-    color:         var(--putih);
-    font-size:     52px;
-    font-weight:   800;
-    line-height:   1.2;
+    color: var(--putih);
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
     margin-bottom: 24px;
 }
 
 .hero-sub {
-    color:         rgba(255, 255, 255, 0.85);
-    font-size:     18px;
-    line-height:   1.8;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    line-height: 1.8;
     margin-bottom: 40px;
 }
 
 .hero-tombol-grup {
-    display:         flex;
-    gap:             16px;
+    display: flex;
+    gap: 16px;
     justify-content: center;
-    flex-wrap:       wrap;
+    flex-wrap: wrap;
 }
 
 .tombol-utama {
     background-color: var(--putih);
-    color:            var(--hijau-tua);
-    padding:          14px 32px;
-    border-radius:    8px;
-    text-decoration:  none;
-    font-weight:      700;
-    font-size:        15px;
-    transition:       all 0.3s ease;
+    color: var(--hijau-tua);
+    padding:  14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
 
 .tombol-utama:hover {
     background-color: var(--hijau-terang);
-    transform:        translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .tombol-outline {
