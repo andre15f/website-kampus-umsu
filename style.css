@@ -189,123 +189,114 @@ html {
 }
 
 .tombol-outline {
-    border:          2px solid var(--putih);
-    color:           var(--putih);
-    padding:         14px 32px;
-    border-radius:   8px;
+    border: 2px solid var(--putih);
+    color: var(--putih);
+    padding: 14px 32px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight:     700;
-    font-size:       15px;
-    transition:      all 0.3s ease;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
 
 .tombol-outline:hover {
     background-color: var(--putih);
-    color:            var(--hijau-tua);
-    transform:        translateY(-2px);
+    color: var(--hijau-tua);
+    transform: translateY(-2px);
 }
 
-/* =============================================
-   STATISTIK
-   ============================================= */
-
+/*STATISTIK*/
 #statistik {
     background-color: var(--hijau-tua);
-    padding:          60px 24px;
+    padding: 60px 24px;
 }
 
 .statistik-container {
-    display:         flex;
+    display: flex;
     justify-content: space-around;
-    align-items:     center;
-    max-width:       1200px;
-    margin:          0 auto;
-    flex-wrap:       wrap;
-    gap:             40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .stat-item {
     text-align: center;
-    color:      var(--putih);
+    color: var(--putih);
 }
 
 .stat-angka {
-    font-size:   56px;
+    font-size: 56px;
     font-weight: 800;
-    color:       var(--hijau-terang);
+    color: var(--hijau-terang);
 }
 
 .stat-satuan {
-    font-size:   36px;
+    font-size: 36px;
     font-weight: 700;
-    color:       var(--putih);
+    color: var(--putih);
 }
 
 .stat-label {
-    font-size:  15px;
-    color:      rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 8px;
 }
 
-/* =============================================
-   REUSABLE SECTION STYLES
-   ============================================= */
-
+/*REUSABLE SECTION STYLES*/
 .section-wrapper {
     max-width: 1200px;
-    margin:    0 auto;
-    padding:   80px 24px;
+    margin: 0 auto;
+    padding: 80px 24px;
 }
 
 .section-header {
-    text-align:    center;
+    text-align: center;
     margin-bottom: 56px;
 }
 
 .section-judul {
-    font-size:     36px;
-    font-weight:   800;
-    color:         var(--abu-gelap);
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--abu-gelap);
     margin-bottom: 12px;
 }
 
 .section-sub {
     font-size: 16px;
-    color:     var(--abu-muda);
+    color: var(--abu-muda);
 }
 
-/* =============================================
-   PROGRAM STUDI
-   ============================================= */
-
+/*PROGRAM STUDI*/
 #program {
     background-color: var(--bg-section);
 }
 
 .program-grid {
-    display:               grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:                   28px;
+    gap: 28px;
 }
 
 .program-kartu {
     background-color: var(--putih);
-    border-radius:    12px;
-    padding:          36px 28px;
-    box-shadow:       var(--shadow);
-    transition:       transform 0.3s ease, box-shadow 0.3s ease;
-    border-top:       4px solid transparent;
+    border-radius: 12px;
+    padding: 36px 28px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
 }
 
 .program-kartu:hover {
-    transform:  translateY(-6px);
+    transform: translateY(-6px);
     box-shadow: 0 12px 36px rgba(0,0,0,0.12);
     border-top: 4px solid var(--hijau-muda);
 }
 
 .program-kartu.unggulan {
     background-color: var(--hijau-tua);
-    border-top:       4px solid var(--hijau-terang);
+    border-top: 4px solid var(--hijau-terang);
 }
 
 .program-kartu.unggulan .kartu-judul,
@@ -314,7 +305,7 @@ html {
 }
 
 .kartu-ikon {
-    font-size:     40px;
+    font-size: 40px;
     margin-bottom: 16px;
 }
 
@@ -325,30 +316,27 @@ html {
 }
 
 .kartu-judul {
-    font-size:     20px;
-    font-weight:   700;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 12px;
-    color:         var(--abu-gelap);
+    color: var(--abu-gelap);
 }
 
 .kartu-deskripsi {
-    font-size:     14px;
-    color:         var(--abu-muda);
-    line-height:   1.7;
+    font-size: 14px;
+    color: var(--abu-muda);
+    line-height: 1.7;
     margin-bottom: 20px;
 }
 
 .kartu-link {
-    color:           var(--hijau-muda);
+    color: var(--hijau-muda);
     text-decoration: none;
-    font-weight:     600;
-    font-size:       14px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-/* =============================================
-   BERITA
-   ============================================= */
-
+/*BERITA*/
 .berita-grid {
     display:               grid;
     grid-template-columns: repeat(3, 1fr);
@@ -357,10 +345,10 @@ html {
 
 .berita-kartu {
     background-color: var(--putih);
-    border-radius:    12px;
-    overflow:         hidden;
-    box-shadow:       var(--shadow);
-    transition:       transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
 }
 
 .berita-kartu:hover {
@@ -369,11 +357,11 @@ html {
 
 .berita-gambar {
     background-color: var(--bg-section);
-    height:           160px;
-    display:          flex;
-    align-items:      center;
-    justify-content:  center;
-    font-size:        56px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
 }
 
 .berita-gambar img {
@@ -388,31 +376,28 @@ html {
 
 .berita-tanggal {
     font-size: 12px;
-    color:     var(--abu-muda);
+    color: var(--abu-muda);
 }
 
 .berita-judul {
-    font-size:   15px;
+    font-size: 15px;
     font-weight: 700;
-    margin:      8px 0 12px;
+    margin: 8px 0 12px;
     line-height: 1.5;
-    color:       var(--abu-gelap);
+    color: var(--abu-gelap);
 }
 
 .berita-link {
-    color:           var(--hijau-muda);
+    color: var(--hijau-muda);
     text-decoration: none;
-    font-size:       13px;
-    font-weight:     600;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-/* =============================================
-   SAMBUTAN REKTOR
-   ============================================= */
-
+/*SAMBUTAN REKTOR */
 .sambutan-container {
-    display:     flex;
-    gap:         60px;
+    display: flex;
+    gap: 60px;
     align-items: center;
 }
 
@@ -421,15 +406,15 @@ html {
 }
 
 .foto-rektor {
-    width:            220px;
-    height:           220px;
+    width: 220px;
+    height: 220px;
     background-color: var(--bg-section);
-    border-radius:    50%;
-    display:          flex;
-    align-items:      center;
-    justify-content:  center;
-    font-size:        80px;
-    border:           4px solid var(--hijau-muda);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border: 4px solid var(--hijau-muda);
 }
 
 .foto-rektor img {
@@ -440,87 +425,84 @@ html {
 }
 
 .sambutan-label {
-    color:          var(--hijau-muda);
-    font-size:      13px;
+    color: var(--hijau-muda);
+    font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom:  8px;
+    margin-bottom: 8px;
 }
 
 .sambutan-nama {
-    font-size:     24px;
-    font-weight:   800;
-    color:         var(--abu-gelap);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--abu-gelap);
     margin-bottom: 20px;
 }
 
 .sambutan-isi {
-    font-size:     15px;
-    line-height:   1.8;
-    color:         var(--abu-muda);
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--abu-muda);
     margin-bottom: 12px;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
-
+/* FOOTER*/
 #footer {
     background-color: var(--abu-gelap);
-    color:            var(--putih);
+    color: var(--putih);
 }
 
 .footer-container {
-    display:               grid;
+    display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap:                   48px;
-    max-width:             1200px;
-    margin:                0 auto;
-    padding:               60px 24px 40px;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px 40px;
 }
 
 .footer-logo {
-    width:            56px;
-    height:           56px;
+    width: 56px;
+    height: 56px;
     background-color: var(--hijau-muda);
-    border-radius:    50%;
-    display:          flex;
-    align-items:      center;
-    justify-content:  center;
-    font-weight:      bold;
-    font-size:        18px;
-    margin-bottom:    16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
 }
 
 .footer-tagline {
-    color:         var(--hijau-terang);
-    font-style:    italic;
+    color: var(--hijau-terang);
+    font-style: italic;
     margin-bottom: 12px;
-    font-size:     14px;
+    font-size: 14px;
 }
 
 .footer-alamat {
-    color:       rgba(255,255,255,0.6);
-    font-size:   13px;
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
     line-height: 1.8;
 }
 
 .footer-judul-kolom {
-    color:          var(--hijau-terang);
-    font-size:      14px;
-    font-weight:    700;
-    margin-bottom:  20px;
+    color: var(--hijau-terang);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .footer-link {
-    display:         block;
-    color:           rgba(255,255,255,0.7);
+    display: block;
+    color: rgba(255,255,255,0.7);
     text-decoration: none;
-    font-size:       13px;
-    margin-bottom:   10px;
-    transition:      color 0.2s ease;
+    font-size: 13px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
 }
 
 .footer-link:hover {
@@ -529,19 +511,16 @@ html {
 
 .footer-bawah {
     text-align: center;
-    padding:    20px 24px;
+    padding: 20px 24px;
     border-top: 1px solid rgba(255,255,255,0.1);
-    font-size:  13px;
-    color:      rgba(255,255,255,0.4);
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
 }
 
-/* =============================================
-   DARK MODE
-   ============================================= */
-
+/*DARK MODE*/
 body.dark-mode {
     background-color: #0F172A;
-    color:            #E2E8F0;
+    color: #E2E8F0;
 }
 
 body.dark-mode .section-judul,
@@ -561,10 +540,7 @@ body.dark-mode #berita {
     background-color: #0F172A;
 }
 
-/* =============================================
-   NAVBAR SAAT DI-SCROLL
-   ============================================= */
-
+/*NAVBAR SAAT DI-SCROLL*/
 #navbar.navbar-scroll {
     background-color: rgba(0, 60, 30, 0.98);
     box-shadow:       0 4px 24px rgba(0,0,0,0.25);
